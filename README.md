@@ -56,20 +56,6 @@ A modern and responsive Data Analyst portfolio built using React.js, Tailwind CS
 - Contact
 - Footer
 
----
-
-## 📸 Screenshots
-
-### Hero Section
-![Hero](./src/assets/hero-preview.png)
-
-### Projects Section
-![Projects](./src/assets/projects-preview.png)
-
-### Certifications Section
-![Certifications](./src/assets/certifications-preview.png)
-
-
 ## 📌 Future Improvements
 
 - Live Power BI Dashboard Embedding
