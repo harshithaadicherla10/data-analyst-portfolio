@@ -1,23 +1,22 @@
 
-# 🚀 Harshitha React Portfolio
+# 📊 Harshitha Data Analyst Portfolio
 
-A modern and responsive developer portfolio website built using **React.js**, **Tailwind CSS**, and **Vite** showcasing projects, certifications, technical skills, and full stack development expertise.
+A modern and responsive Data Analyst portfolio built using React.js, Tailwind CSS, and Vite showcasing data analytics projects, Power BI dashboards, SQL analysis, certifications, technical skills, and professional experience.
 
 ---
 
-## ✨ Features
+✨ Features
 
-- Modern UI/UX Design
-- Fully Responsive Layout
-- Animated Glassmorphism Effects
-- Mobile Responsive Navbar
-- Smooth Hover Animations
-- Projects Showcase
-- Certifications Section
-- Education Timeline
-- Contact Section
-- Resume Download CTA
-- Optimized Performance
+* Modern Data Analyst Portfolio
+* Fully Responsive Design
+* Interactive Project Showcase
+* Data Analytics & BI Skills Display
+* Professional Certifications Section
+* Internship Experience Timeline
+* Resume Download
+* Contact Section
+* Smooth Animations & Glassmorphism UI
+* Optimized Performance
 
 ---
 
@@ -29,20 +28,30 @@ A modern and responsive developer portfolio website built using **React.js**, **
 - JavaScript
 - Vite
 
-### Libraries & Tools
-- React Icons
-- CSS Animations
-- Responsive Design
+### Data Analytics Expertise
+- SQL
+- Python
+- Power BI
+- Excel
+- Pandas
+- NumPy
+- Data Visualization
+
+### Tools
+- Git
+- GitHub
+- VS Code
+- Jupyter Notebook
 
 ---
 
 ## 📂 Sections Included
 
-- Hero Section
-- About
-- Skills
-- Projects
-- Certifications
+- Hero
+- About Me
+- Technical Skills
+- Data Analytics Projects
+- Certifications & Job Simulations
 - Education
 - Contact
 - Footer
@@ -60,54 +69,27 @@ A modern and responsive developer portfolio website built using **React.js**, **
 ### Certifications Section
 ![Certifications](./src/assets/certifications-preview.png)
 
----
-
-## 🚀 Installation & Setup
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/harshitha-react-portfolio.git
-cd harshitha-react-portfolio
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run the development server:
-
-```bash
-npm run dev
-```
-
-Build for production:
-
-```bash
-npm run build
-```
-
----
 
 ## 📌 Future Improvements
 
-- Dark/Light Theme Toggle
-- Framer Motion Animations
-- Blog Section
-- Live Project Deployment Links
-- Advanced UI Interactions
+- Live Power BI Dashboard Embedding
+- Case Study Pages
+- Project Filtering by Technology
+- Blog for Analytics Learning
+- Interactive Dashboard Previews
+- Advanced Data Visualizations
 
 ---
 
 ## 👩‍💻 Author
 
-**Harshitha Adicherla**
+Harshitha Adicherla
 
-- GitHub: https://github.com/harshithaadicherla10
-- LinkedIn: https://linkedin.com/in/harshithaadicherla10
+GitHub:
+https://github.com/harshithaadicherla10
 
+LinkedIn:
+https://linkedin.com/in/harshithaadicherla10
 ---
 
 ## ⭐ Support
