@@ -1,25 +1,22 @@
-import smartcartImg from './assets/smartcart.png';
 import quantiumImg from "./assets/quantium.png";
-import dashboardImg from './assets/dashboard.png';
-import luxuryImg from './assets/luxury.png';
+import websiteImg from './assets/website.png';
+import customerPurchasingImg from './assets/customerPurchasing.png';
 import ecommerceImg from './assets/ecommerce.png';
-import trackhireImg from './assets/trackhire.png';
-import portfolioImg from './assets/portfolio.png';
-import emsImg from './assets/ems.png';
 import { MdEmail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import {
-  FaAws,
-  FaPython,
-  FaDatabase,
-} from "react-icons/fa";
+MdDashboard,
+MdAnalytics,
+MdInsights,
+} from "react-icons/md";
 
 import {
-  MdAnalytics,
-  MdDashboard,
-  MdBarChart,
-} from "react-icons/md";
+FaPython,
+FaDatabase,
+FaFileExcel,
+} from "react-icons/fa";
+
 
 import {
   HiBuildingOffice2,
@@ -42,123 +39,76 @@ useEffect(() => {
 }, []);
 
   const projects = [
-  {
-    title: "SmartCart – Full Stack E-Commerce Platform",
-
-    desc:
-      "Developed a full-stack e-commerce web application with secure authentication, product management, shopping cart functionality, order workflows, and responsive UI. Built REST APIs and integrated SQLite database for inventory and user management.",
-
-    tech: [
-      "Python",
-      "Flask",
-      "SQLite3",
-      "REST APIs",
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Bootstrap",
-    ],
-
-    github:
-      "https://github.com/harshithaadicherla10/SmartCart_sqlite3",
-
-    image: smartcartImg,
-  },
-
-  {
-  title: "TrackHire – Full Stack Job Tracker",
+    {
+  title: "Retail Sales & Store Performance Analytics",
 
   desc:
-    "Modern full-stack job application tracking system with authentication, role-based access, analytics dashboard, filtering, and PostgreSQL integration built using Flask.",
+    "Analyzed 264K+ retail transactions using Python to identify sales trends, customer segments, brand performance, and store-level insights. Performed data cleaning, feature engineering, exploratory data analysis (EDA), and visualization to uncover business opportunities and support data-driven retail decision-making.",
 
   tech: [
     "Python",
-    "Flask",
-    "PostgreSQL",
-    "Bootstrap",
-    "JavaScript",
-    "Chart.js",
-    "Gunicorn",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+    "Excel",
+    "EDA",
+    "Data Analytics"
   ],
 
-  github:
-    "https://github.com/harshithaadicherla10/trackhire-job-tracker",
+  github: "https://github.com/harshithaadicherla10/quantium-retail-analytics",
 
-  image: trackhireImg,
+  image: quantiumImg,
 },
 
-  {
-  title: "Modern React Portfolio Website",
+{
+  title: "Customer Purchasing Behavior Analysis",
 
   desc:
-    "Modern responsive portfolio website built using React and Tailwind CSS showcasing projects, skills, certifications, and contact information with smooth UI animations, glassmorphism effects, and responsive layouts.",
+    "Analyzed the UCI Online Retail dataset using Python and SQL to uncover customer purchasing patterns, revenue trends, and product performance. Performed RFM analysis, customer segmentation, exploratory data analysis (EDA), and data visualization to generate actionable business insights and support data-driven decision-making.",
 
   tech: [
-    "React.js",
-    "Tailwind CSS",
-    "JavaScript",
-    "Vite",
-    "Responsive Design",
-    "UI/UX",
+    "Python",
+    "SQL",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+    "SQLite",
+    "RFM Analysis"
   ],
 
   github:
-    "https://github.com/yourusername/react-portfolio",
+    "https://github.com/harshithaadicherla10/customer-purchasing-behavior",
 
-  live:
-    "https://yourportfolio.vercel.app",
-
-  image: portfolioImg,
+  image: customerPurchasingImg,
 },
 
-  {
-    title: "Employee Management System",
+{
+  title: "Website Traffic & Conversion Analytics Dashboard",
+
+  desc:
+    "Developed an interactive Power BI dashboard to analyze website traffic, user engagement, conversion rates, and business performance metrics. Created KPI reports, visualizations, and DAX measures for actionable insights.",
+
+  tech: [
+    "Power BI",
+    "DAX",
+    "Power Query",
+    "Excel",
+    "Data Visualization",
+    "Dashboard Development"
+  ],
+
+  github: "https://github.com/harshithaadicherla10/website-analytics-conversion-dashboard",
+
+  image: websiteImg,
+},
+
+{
+    title: "E-Commerce Sales & Customer Insights Analysis",
 
     desc:
-      "Built a full-stack employee management application with authentication, CRUD operations, employee record management, session handling, and MySQL database integration using Flask backend architecture.",
-
-    tech: [
-      "Python",
-      "Flask",
-      "MySQL",
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Bootstrap",
-    ],
-
-    github:
-      "https://github.com/harshithaadicherla10/employee-management-system",
-
-    image: emsImg,
-  },
-
-  {
-    title: "Luxury Interior Design Website",
-
-    desc:
-      "Designed and developed a modern responsive interior design website with elegant UI, smooth scrolling effects, interactive sections, responsive layouts, and visually rich frontend design.",
-
-    tech: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Responsive Design",
-      "Frontend Development",
-      "UI/UX",
-    ],
-
-    github:
-      "https://github.com/harshithaadicherla10/luxury-interior-website",
-
-    image: luxuryImg,
-  },
-
-  {
-    title: "SQL E-Commerce Database Analysis",
-
-    desc:
-      "Performed SQL-based analysis on e-commerce datasets using joins, aggregations, filtering, and KPI reporting to extract customer insights and business performance metrics.",
+      "Analyzed e-commerce sales and customer data using SQL to identify revenue trends, customer behavior, top-performing products, and key business KPIs through joins, aggregations, and advanced queries.",
 
     tech: [
       "SQL",
@@ -170,7 +120,7 @@ useEffect(() => {
     ],
 
     github:
-      "https://github.com/harshithaadicherla10",
+      "https://github.com/harshithaadicherla10/Ecommerce-SQL-Analysis",
 
     image: ecommerceImg,
   },
@@ -181,80 +131,133 @@ useEffect(() => {
   'Programming Languages': [
     'Python',
     'SQL',
-    'JavaScript',
   ],
 
-  'Frontend Development': [
-    'HTML5',
-    'CSS3',
-    'Bootstrap',
-    'React.js',
-    'Responsive Web Design',
-    'Tailwind CSS',
-  ],
-
-  'Backend Development': [
-    'Flask',
-    'REST APIs',
-    'Authentication & Authorization',
-    'CRUD Operations',
-    'API Integration',
-    'JWT Authentication',
-  ],
-
-  Databases: [
-    'MySQL',
-    'SQLite3',
-    'PostgreSQL',
-    'Database Design',
-  ],
-
-  'Tools & Platforms': [
-    'Git',
-    'GitHub',
-    'Postman',
-    'VS Code',
-    'Jupyter Notebook',
-  ],
-
-  'Cloud & Deployment': [
-    'AWS (Basics)',
-    'PythonAnywhere',
-    'Render',
-    'Vercel',
-    'Environment Variables',
+  'Data Analytics & Business Intelligence':  [
+    'Power BI',
+  'Microsoft Excel',
+  'DAX',
+  'Power Query',
+  'Dashboard Development',
+  'Data Visualization',
+  'KPI Reporting',
+  'Business Intelligence',
   ],
 
   'Python Libraries': [
     'Pandas',
-    'NumPy',
-    'Matplotlib',
-    'Seaborn',
-    'Chart.js',
+  'NumPy',
+  'Matplotlib',
+  'Seaborn',
   ],
 
-  'Data Analytics & Visualization': [
-    'Power BI',
-    'Excel',
-    'Data Visualization',
-    'Dashboard Development',
-    'EDA',
-    'Business Intelligence',
+  Databases: [
+    'MySQL',
+    'PostgreSQL',
+    'SQLite3',
   ],
 
-  'AI & Modern Tools': [
-    'Generative AI',
-    'OpenAI API',
-    'ClaudeAI',
-  ],
+  'Analytics Concepts': [
+  'Data Cleaning',
+  'Data Validation',
+  'Data Transformation',
+  'Exploratory Data Analysis',
+  'KPI Analysis',
+  'Statistical Analysis',
+  'Business Insights',
+  'Requirements Analysis',
+],
 
-  Methodologies: [
-    'Agile',
-    'Scrum',
-    'SDLC',
-    'Responsive Design',
-  ],
+'Infrastructure & Cloud Fundamentals': [
+  'Linux Fundamentals',
+  'Networking Fundamentals',
+  'TCP/IP',
+  'DNS',
+  'DHCP',
+  'Virtualization',
+  'Cloud Fundamentals',
+],
+
+  'Tools & Platforms': [
+    'Git',
+    'GitHub',
+    'Jupyter Notebook',
+    'VS Code',
+    'Jira',
+    'GitHub Copilot'
+  ]
 };
+
+const certifications = [
+  {
+    icon: <MdDashboard />,
+    provider: "Office Master",
+    title: "Power BI Workshop",
+    description:
+      "Power BI, DAX, Power Query, Dashboard Development, KPI Reporting, and Business Intelligence.",
+    link: "https://certx.in/certificate/4d173e82-3861-47b4-ab33-09d1da812849255690",
+    color: "text-yellow-300",
+    bg: "bg-yellow-500/10 border-yellow-400/20",
+  },
+
+  {
+    icon: <MdAnalytics />,
+    provider: "Deloitte",
+    title: "Data Analytics Job Simulation",
+    description:
+      "Data Cleaning, Dashboard Reporting, Data Visualization, and Business Insights.",
+    link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_pqguAcG55mwmo4KLi_1741590164412_completion_certificate.pdf",
+    color: "text-green-300",
+    bg: "bg-green-500/10 border-green-400/20",
+  },
+
+  {
+    icon: <MdInsights />,
+    provider: "Quantium",
+    title: "Data Analytics Job Simulation",
+    description:
+      "Retail Analytics, Customer Segmentation, Purchasing Behavior Analysis, and Business Recommendations.",
+    link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/32A6DqtsbF7LbKdcq/NkaC7knWtjSbi6aYv_32A6DqtsbF7LbKdcq_pqguAcG55mwmo4KLi_1745939138395_completion_certificate.pdf",
+    color: "text-purple-300",
+    bg: "bg-purple-500/10 border-purple-400/20",
+  },
+
+  {
+    icon: <FaPython />,
+    provider: "freeCodeCamp",
+    title: "Data Analysis with Python",
+    description:
+      "Data Cleaning, EDA, Statistical Analysis, Pandas, NumPy, and Data Visualization.",
+    link:
+      "https://www.freecodecamp.org/certification/aharshitha1001/data-analysis-with-python-v7",
+    color: "text-blue-300",
+    bg: "bg-blue-500/10 border-blue-400/20",
+  },
+
+  {
+    icon: <FaDatabase />,
+    provider: "LetsUpgrade",
+    title: "MySQL Bootcamp",
+    description:
+      "SQL Queries, Joins, Aggregations, Filtering, and Relational Database Fundamentals.",
+    link: "https://drive.google.com/file/d/16tJg8d7YnqppZA6Dwh1NHhzx1AOXNm6I/view?usp=drive_link",
+    color: "text-sky-300",
+    bg: "bg-sky-500/10 border-sky-400/20",
+  },
+
+  {
+    icon: <FaFileExcel />,
+    provider: "LetsUpgrade",
+    title: "Excel Bootcamp",
+    description:
+      "Pivot Tables, Lookup Functions, Reporting, Data Cleaning, and Spreadsheet Analytics.",
+    link: "https://drive.google.com/file/d/1qMu3eMq5O8aWUdEpchS7qj-WHP8xHIIN/view?usp=drive_link",
+    color: "text-emerald-300",
+    bg: "bg-emerald-500/10 border-emerald-400/20",
+  },
+];
+
+
   return (
     <div className="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white min-h-screen font-sans scroll-smooth">
       {/* Navbar */}
@@ -368,36 +371,35 @@ useEffect(() => {
     </h1>
 
     {/* Role */}
-    <h2 className="text-2xl md:text-4xl font-semibold text-gray-300 mb-8">
-      Python Full Stack Developer
+    <h2 className="text-4xl md:text-6xl font-semibold text-gray-300 mb-8">
+      Data Analyst 
     </h2>
 
     {/* Tags */}
-    <div className="flex flex-wrap justify-center gap-4 mb-10">
+   <div className="flex flex-wrap justify-center gap-4 mb-10">
 
-<span className="animate-float-delay bg-blue-500/10 border border-blue-400/20 text-blue-300 px-5 py-2 rounded-full text-sm font-semibold shadow-lg shadow-blue-500/10 hover:scale-105 hover:bg-blue-500/20 transition duration-300">
-  Frontend Developer
+<span className="animate-float bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 px-5 py-2 rounded-full text-sm font-semibold shadow-lg shadow-cyan-500/10">
+  Data Analyst
 </span>
 
-<span className="animate-float bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 px-5 py-2 rounded-full text-sm font-semibold shadow-lg shadow-cyan-500/10 hover:scale-105 hover:bg-cyan-500/20 transition duration-300">
+<span className="animate-float-delay bg-blue-500/10 border border-blue-400/20 text-blue-300 px-5 py-2 rounded-full text-sm font-semibold shadow-lg shadow-blue-500/10">
   SQL Developer
 </span>
 
-<span className="animate-float-slow bg-purple-500/10 border border-purple-400/20 text-purple-300 px-5 py-2 rounded-full text-sm font-semibold shadow-lg shadow-purple-500/10 hover:scale-105 hover:bg-purple-500/20 transition duration-300">
-  Backend Developer
+<span className="animate-float-slow bg-purple-500/10 border border-purple-400/20 text-purple-300 px-5 py-2 rounded-full text-sm font-semibold shadow-lg shadow-purple-500/10">
+  Power BI Developer
 </span>
 
+<span className="animate-float bg-green-500/10 border border-green-400/20 text-green-300 px-5 py-2 rounded-full text-sm font-semibold shadow-lg shadow-green-500/10">
+  Business Intelligence
+</span>
 
-
-    </div>
+</div>
 
     {/* Description */}
-    <p className="text-gray-400 max-w-3xl mx-auto text-lg md:text-xl leading-relaxed mb-12">
-      Passionate Python Full Stack Developer focused on building scalable
-      web applications, REST APIs, authentication systems, and responsive
-      user experiences using Flask, React, SQL, and modern deployment
-      technologies.
-    </p>
+ <p className="text-gray-400 max-w-3xl mx-auto text-lg md:text-xl leading-relaxed mb-12">
+Data Analyst with hands-on internship experience in SQL, Python, Power BI, and Excel. Skilled in data cleaning, exploratory data analysis, dashboard development, KPI reporting, and transforming complex datasets into actionable business insights that support data-driven decision-making.
+</p>
 
     {/* Buttons */}
     <div className="flex flex-wrap justify-center gap-5">
@@ -460,29 +462,31 @@ useEffect(() => {
 
           <h3 className="text-4xl md:text-5xl font-bold leading-snug text-white mb-6">
 
-            Building Modern &
+            Turning Complex Data Into
 
             <span className="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
-              {" "}Scalable Web Applications
+              {" "}Actionable Decisions
             </span>
 
           </h3>
 
           <p className="text-gray-300 text-lg leading-relaxed mb-8">
-            I’m a passionate Python Full Stack Developer focused on building
-            responsive, scalable, and user-friendly web applications using
-            modern frontend and backend technologies.
+            I’m a Data Analyst with hands-on internship experience in SQL,
+Python, Power BI, and Excel. I enjoy transforming raw data into
+meaningful insights through dashboard development, KPI reporting,
+data validation, and exploratory data analysis that support
+business decision-making.
           </p>
 
           {/* Roles */}
           <div className="flex flex-wrap gap-4 mb-8">
 
   <span className="animate-float bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 px-5 py-2 rounded-full text-sm font-semibold shadow-lg shadow-cyan-500/10 hover:scale-105 hover:bg-cyan-500/20 transition duration-300">
-    Python Full Stack Developer
+    Data Analyst
   </span>
 
   <span className="animate-float-slow bg-purple-500/10 border border-purple-400/20 text-purple-300 px-5 py-2 rounded-full text-sm font-semibold shadow-lg shadow-purple-500/10 hover:scale-105 hover:bg-purple-500/20 transition duration-300">
-    Frontend Developer
+    Power BI Developer
   </span>
 
   <span className="animate-float-delay bg-blue-500/10 border border-blue-400/20 text-blue-300 px-5 py-2 rounded-full text-sm font-semibold shadow-lg shadow-blue-500/10 hover:scale-105 hover:bg-blue-500/20 transition duration-300">
@@ -490,7 +494,7 @@ useEffect(() => {
   </span>
 
   <span className="animate-float-fast bg-pink-500/10 border border-pink-400/20 text-pink-300 px-5 py-2 rounded-full text-sm font-semibold shadow-lg shadow-pink-500/10 hover:scale-105 hover:bg-pink-500/20 transition duration-300">
-    Backend Developer
+    Business Intelligence
   </span>
 
   
@@ -498,10 +502,10 @@ useEffect(() => {
 </div>
 
           <p className="text-gray-400 leading-relaxed text-base md:text-lg">
-            Skilled in developing full-stack applications with Python, Flask,
-            React.js, SQL, REST APIs, authentication systems, and modern UI
-            design. Passionate about creating clean, efficient, and impactful
-            digital experiences.
+            Skilled in SQL, Python, Power BI, Excel, DAX, Power Query,
+data cleaning, exploratory data analysis (EDA), KPI reporting,
+and dashboard development. Passionate about using data to uncover
+patterns, solve business problems, and drive informed decisions.
           </p>
 
         </div>
@@ -512,12 +516,12 @@ useEffect(() => {
           {/* Card 1 */}
           <div className="bg-slate-900/60 border border-white/10 rounded-3xl p-7 text-center hover:border-cyan-400/30 hover:-translate-y-1 transition duration-300">
 
-            <h4 className="text-4xl font-extrabold bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent mb-2">
-              10+
+            <h4 className="text-3xl font-bold text-cyan-300 mb-2">
+              Data Analyst Intern
             </h4>
 
             <p className="text-gray-400 text-sm">
-              Projects Built
+              NXTDC
             </p>
 
           </div>
@@ -525,8 +529,34 @@ useEffect(() => {
           {/* Card 2 */}
           <div className="bg-slate-900/60 border border-white/10 rounded-3xl p-7 text-center hover:border-cyan-400/30 hover:-translate-y-1 transition duration-300">
 
+            <h4 className="text-3xl font-bold text-cyan-300 mb-2">
+              Data Analytics
+            </h4>
+
+            <p className="text-gray-400 text-sm">
+              SQL • Python • Power BI • Excel
+            </p>
+
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-slate-900/60 border border-white/10 rounded-3xl p-7 text-center hover:border-cyan-400/30 hover:-translate-y-1 transition duration-300">
+
             <h4 className="text-4xl font-extrabold bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent mb-2">
-              8+
+              3+
+            </h4>
+
+            <p className="text-gray-400 text-sm">
+              Analytics Projects
+            </p>
+
+          </div>
+
+          {/* Card 4 */}
+          <div className="bg-slate-900/60 border border-white/10 rounded-3xl p-7 text-center hover:border-cyan-400/30 hover:-translate-y-1 transition duration-300">
+
+            <h4 className="text-4xl font-extrabold bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent mb-2">
+              4+
             </h4>
 
             <p className="text-gray-400 text-sm">
@@ -535,31 +565,6 @@ useEffect(() => {
 
           </div>
 
-          {/* Card 3 */}
-          <div className="bg-slate-900/60 border border-white/10 rounded-3xl p-7 text-center hover:border-cyan-400/30 hover:-translate-y-1 transition duration-300">
-
-            <h4 className="text-3xl font-bold text-cyan-300 mb-2">
-              Frontend
-            </h4>
-
-            <p className="text-gray-400 text-sm">
-              Modern UI Development
-            </p>
-
-          </div>
-
-          {/* Card 4 */}
-          <div className="bg-slate-900/60 border border-white/10 rounded-3xl p-7 text-center hover:border-cyan-400/30 hover:-translate-y-1 transition duration-300">
-
-            <h4 className="text-3xl font-bold text-cyan-300 mb-2">
-              Backend
-            </h4>
-
-            <p className="text-gray-400 text-sm">
-              Flask & REST APIs
-            </p>
-
-          </div>
 
         </div>
 
@@ -587,7 +592,7 @@ useEffect(() => {
     <div className="text-center mb-16">
 
       <p className="text-cyan-400 font-semibold tracking-[0.25em] uppercase mb-4">
-        Technical Expertise
+        Data Analytics Toolkit
       </p>
 
       <h2 className="text-5xl md:text-6xl font-extrabold text-white">
@@ -660,7 +665,7 @@ useEffect(() => {
     <div className="text-center mb-16">
 
       <p className="text-cyan-400 font-semibold tracking-[0.25em] uppercase mb-4">
-        My Recent Work
+        Analytics Projects
       </p>
 
       <h2 className="text-5xl md:text-6xl font-extrabold text-white">
@@ -848,307 +853,88 @@ useEffect(() => {
 </section>
 
 {/* Certifications Section */}
+
 <section
   id="certifications"
   className="relative border-t border-white/10 py-24 px-6 bg-gradient-to-br from-slate-950 via-[#07152d] to-slate-950 overflow-hidden"
 >
 
-  {/* Background Glow */}
   <div className="absolute top-10 left-10 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl"></div>
-
   <div className="absolute bottom-10 right-10 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
 
   <div className="relative max-w-7xl mx-auto">
 
-    {/* Heading */}
-    <div className="text-center mb-16">
+<div className="text-center mb-16">
 
-      <p className="text-cyan-400 font-semibold tracking-[0.25em] uppercase mb-4">
-        Professional Learning
-      </p>
+  <p className="text-cyan-400 font-semibold tracking-[0.25em] uppercase mb-4">
+  Professional Learning
+</p>
 
-      <h2 className="text-5xl md:text-6xl font-extrabold text-white">
-        Certifications
-      </h2>
+<h2 className="text-5xl md:text-6xl font-extrabold text-white">
+  Certifications & Job Simulations
+</h2>
 
+</div>
+
+{/* Certifications Grid */}
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+
+  {certifications.map((cert) => (
+
+<div
+  key={cert.title + cert.provider}
+  className="group relative bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-[32px] overflow-hidden shadow-2xl hover:-translate-y-3 hover:border-cyan-400/40 hover:shadow-cyan-500/10 transition-all duration-500"
+>
+
+  {/* Top Gradient Line */}
+  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 opacity-80"></div>
+
+  {/* Hover Glow */}
+  <div className="absolute -top-20 -right-20 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+  <div className="relative p-8 flex flex-col h-full">
+
+    {/* Icon */}
+    <div
+      className={`w-fit mx-auto mb-6 p-3 rounded-2xl border ${cert.bg} ${cert.border} ${cert.color} text-3xl`}
+    >
+      {cert.icon}
     </div>
 
-    {/* Certifications Grid */}
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      {/* Python */}
-      <div className="group relative bg-white/[0.04] border border-white/10 rounded-[32px] p-8 min-h-[380px] backdrop-blur-xl shadow-2xl hover:border-cyan-400/30 hover:-translate-y-3 hover:shadow-cyan-500/10 transition-all duration-500 overflow-hidden">
-
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 opacity-80"></div>
-
-        <div className="absolute -top-20 -right-20 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
-
-        <div className="relative">
-
-          <div className="flex items-center gap-3 mb-5">
-
-            <div className="bg-blue-500/10 border border-blue-400/20 p-3 rounded-2xl text-blue-300 text-2xl">
-              <FaPython />
-            </div>
-
-            <p className="text-blue-300 font-semibold text-lg">
-              Udemy
-            </p>
-
-          </div>
-
-          <h3 className="text-2xl font-bold text-white mb-4">
-            Python Programming 
-          </h3>
-
-          <p className="text-gray-400 leading-relaxed">
-            Built strong foundations in Python programming, backend development,
-            problem solving, data handling, and modern application development.
-          </p>
-
-          <a
-            href="https://www.udemy.com/certificate/UC-104b11bc-e00e-4e08-afbf-c0a20cd3e739/"
-            target="_blank"
-            rel="noreferrer"
-            className="group inline-flex items-center gap-2 mt-8 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-400/20 hover:border-cyan-300 px-5 py-3 rounded-2xl text-cyan-300 hover:text-white font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20"
-          >
-            View Certificate
-
-            <FiExternalLink className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </a>
-
-        </div>
-
-      </div>
-
-      {/* Frontend */}
-      <div className="group relative bg-white/[0.04] border border-white/10 rounded-[32px] p-8 min-h-[380px] backdrop-blur-xl shadow-2xl hover:border-cyan-400/30 hover:-translate-y-3 hover:shadow-cyan-500/10 transition-all duration-500 overflow-hidden">
-
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 opacity-80"></div>
-
-        <div className="absolute -top-20 -right-20 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
-
-        <div className="relative">
-
-          <div className="flex items-center gap-3 mb-5">
-
-            <div className="bg-cyan-500/10 border border-cyan-400/20 p-3 rounded-2xl text-cyan-300 text-2xl">
-              <MdDashboard />
-            </div>
-
-            <p className="text-cyan-300 font-semibold text-lg">
-              freeCodeCamp
-            </p>
-
-          </div>
-
-          <h3 className="text-2xl font-bold text-white mb-4">
-            Front End Development Libraries
-          </h3>
-
-          <p className="text-gray-400 leading-relaxed">
-            Learned modern frontend development concepts including responsive
-            UI design, reusable components, and interactive web applications.
-          </p>
-
-          <a
-            href="https://freecodecamp.org/certification/AHarshitha1001/front-end-development-libraries"
-            target="_blank"
-            rel="noreferrer"
-            className="group inline-flex items-center gap-2 mt-8 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-400/20 hover:border-cyan-300 px-5 py-3 rounded-2xl text-cyan-300 hover:text-white font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20"
-          >
-            View Certificate
-
-            <FiExternalLink className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </a>
-
-        </div>
-
-      </div>
-
-      {/* Responsive Web Design */}
-      <div className="group relative bg-white/[0.04] border border-white/10 rounded-[32px] p-8 min-h-[380px] backdrop-blur-xl shadow-2xl hover:border-pink-400/30 hover:-translate-y-3 hover:shadow-pink-500/10 transition-all duration-500 overflow-hidden">
-
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 via-purple-500 to-cyan-500 opacity-80"></div>
-
-        <div className="absolute -top-20 -right-20 w-40 h-40 bg-pink-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
-
-        <div className="relative">
-
-          <div className="flex items-center gap-3 mb-5">
-
-            <div className="bg-pink-500/10 border border-pink-400/20 p-3 rounded-2xl text-pink-300 text-2xl">
-              <MdBarChart />
-            </div>
-
-            <p className="text-pink-300 font-semibold text-lg">
-              freeCodeCamp
-            </p>
-
-          </div>
-
-          <h3 className="text-2xl font-bold text-white mb-4">
-            Responsive Web Design
-          </h3>
-
-          <p className="text-gray-400 leading-relaxed">
-            Learned responsive layouts, accessibility, mobile-first development,
-            and modern CSS design principles for web applications.
-          </p>
-
-          <a
-            href="https://freecodecamp.org/certification/AHarshitha1001/responsive-web-design"
-            target="_blank"
-            rel="noreferrer"
-            className="group inline-flex items-center gap-2 mt-8 bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-400/20 hover:border-pink-300 px-5 py-3 rounded-2xl text-pink-300 hover:text-white font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-pink-500/20"
-          >
-            View Certificate
-
-            <FiExternalLink className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </a>
-
-        </div>
-
-      </div>
-
-      {/* GitHub */}
-      <div className="group relative bg-white/[0.04] border border-white/10 rounded-[32px] p-8 min-h-[380px] backdrop-blur-xl shadow-2xl hover:border-gray-400/30 hover:-translate-y-3 hover:shadow-gray-500/10 transition-all duration-500 overflow-hidden">
-
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gray-300 via-slate-500 to-cyan-500 opacity-80"></div>
-
-        <div className="absolute -top-20 -right-20 w-40 h-40 bg-gray-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
-
-        <div className="relative">
-
-          <div className="flex items-center gap-3 mb-5">
-
-            <div className="bg-gray-500/10 border border-gray-400/20 p-3 rounded-2xl text-gray-300 text-2xl">
-              <FaGithub />
-            </div>
-
-            <p className="text-gray-300 font-semibold text-lg">
-              LetsUpgrade
-            </p>
-
-          </div>
-
-          <h3 className="text-2xl font-bold text-white mb-4">
-            Git & GitHub Bootcamp
-          </h3>
-
-          <p className="text-gray-400 leading-relaxed">
-            Learned Git version control, GitHub workflows, repositories,
-            branching strategies, commits, and collaborative development.
-          </p>
-
-          <a
-            href="https://drive.google.com/file/d/1ypNPDrMladOUTu-CIU39zbeU8vfE_q8E/view?usp=drive_link"
-            target="_blank"
-            rel="noreferrer"
-            className="group inline-flex items-center gap-2 mt-8 bg-gradient-to-r from-gray-500/10 to-slate-500/10 border border-gray-400/20 hover:border-gray-300 px-5 py-3 rounded-2xl text-gray-300 hover:text-white font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-          >
-            View Certificate
-
-            <FiExternalLink className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-          </a>
-
-        </div>
-
-      </div>
-
-
-      {/* MySQL */}
-<div className="group relative bg-white/[0.04] border border-white/10 rounded-[32px] p-8 min-h-[380px] backdrop-blur-xl shadow-2xl hover:border-sky-400/30 hover:-translate-y-3 hover:shadow-sky-500/10 transition-all duration-500 overflow-hidden">
-
-  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 via-cyan-500 to-blue-500 opacity-80"></div>
-
-  <div className="absolute -top-20 -right-20 w-40 h-40 bg-sky-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
-
-  <div className="relative">
-
-    <div className="flex items-center gap-3 mb-5">
-
-      <div className="bg-sky-500/10 border border-sky-400/20 p-3 rounded-2xl text-sky-300 text-2xl">
-        <FaDatabase />
-      </div>
-
-      <p className="text-sky-300 font-semibold text-lg">
-        LetsUpgrade
-      </p>
-
-    </div>
-
-    <h3 className="text-2xl font-bold text-white mb-4">
-      MySQL Bootcamp
-    </h3>
-
-    <p className="text-gray-400 leading-relaxed">
-      Learned relational databases, SQL querying, joins, filtering,
-      aggregations, schema design, and database management fundamentals.
+    {/* Provider */}
+    <p className="text-center text-cyan-400 font-medium mb-2">
+      {cert.provider}
     </p>
 
-    <a
-      href="https://drive.google.com/file/d/16tJg8d7YnqppZA6Dwh1NHhzx1AOXNm6I/view?usp=drive_link"
-      target="_blank"
-      rel="noreferrer"
-      className="group inline-flex items-center gap-2 mt-8 bg-gradient-to-r from-sky-500/10 to-cyan-500/10 border border-sky-400/20 hover:border-sky-300 px-5 py-3 rounded-2xl text-sky-300 hover:text-white font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-500/20"
-    >
-      View Certificate
+    {/* Title */}
+    <h3 className="text-xl font-bold text-center text-white mb-4">
+      {cert.title}
+    </h3>
 
-      <FiExternalLink className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-    </a>
+    {/* Description */}
+    <p className="text-gray-400 text-center text-sm leading-relaxed mb-6 flex-grow">
+      {cert.description}
+    </p>
+
+    {/* Certificate Button */}
+    <div className="flex justify-center mt-auto">
+      <a
+        href={cert.link}
+        target="_blank"
+        rel="noreferrer"
+        className="bg-gradient-to-r from-cyan-400 to-blue-500 text-slate-950 px-5 py-3 rounded-2xl font-semibold hover:scale-105 transition duration-300 shadow-lg shadow-cyan-500/20"
+      >
+        View Certificate
+      </a>
+    </div>
 
   </div>
 
 </div>
 
-
-{/* AWS */}
-<div className="group relative bg-white/[0.04] border border-white/10 rounded-[32px] p-8 min-h-[380px] backdrop-blur-xl shadow-2xl hover:border-orange-400/30 hover:-translate-y-3 hover:shadow-orange-500/10 transition-all duration-500 overflow-hidden">
-
-  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 via-yellow-500 to-cyan-500 opacity-80"></div>
-
-  <div className="absolute -top-20 -right-20 w-40 h-40 bg-orange-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
-
-  <div className="relative">
-
-    <div className="flex items-center gap-3 mb-5">
-
-      <div className="bg-orange-500/10 border border-orange-400/20 p-3 rounded-2xl text-orange-300 text-2xl">
-        <FaAws />
-      </div>
-
-      <p className="text-orange-300 font-semibold text-lg">
-        AWS
-      </p>
-
-    </div>
-
-    <h3 className="text-2xl font-bold text-white mb-4">
-      AWS Cloud & Solutions Architecture
-    </h3>
-
-    <p className="text-gray-400 leading-relaxed">
-      Explored cloud infrastructure, deployment concepts, scalability,
-      and modern cloud-based solution architecture fundamentals.
-    </p>
-
-    <a
-      href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_pqguAcG55mwmo4KLi_1745758253873_completion_certificate.pdf"
-      target="_blank"
-      rel="noreferrer"
-      className="group inline-flex items-center gap-2 mt-8 bg-gradient-to-r from-orange-500/10 to-yellow-500/10 border border-orange-400/20 hover:border-orange-300 px-5 py-3 rounded-2xl text-orange-300 hover:text-white font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/20"
-    >
-      View Certificate
-
-      <FiExternalLink className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-    </a>
-
-  </div>
+ ))}
 
 </div>
-
-    </div>
 
   </div>
 
@@ -1194,9 +980,9 @@ useEffect(() => {
 
         {/* Description */}
         <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-14">
-          Open to internships, freelance projects, collaborations,
-          and full-time opportunities in Python Full Stack Development,
-          Frontend Development, Backend Development, and SQL-based roles.
+          Open to freelance projects, internships, collaborations,
+and full-time opportunities in Data Analytics, Power BI,
+SQL Development, Python Full Stack Development, and Web Development.
         </p>
 
         {/* Contact Cards */}
